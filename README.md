@@ -1,6 +1,6 @@
 <h1 align="center">Standard Template Library (STL)</h1>
 
-Array:
+### Array:
 ```c++
 int arr[10] = {1, 12, 3, 24, 35, 16};  
    sort(arr, arr+10, [](int i, int j){  
@@ -10,12 +10,12 @@ int arr[10] = {1, 12, 3, 24, 35, 16};
        cout << arr[i] << " ";  
    }
 ```
-String:
+### String:
 ```c++
 string s1 = str.substr(0, i);	  // 0 = index_start, i = length
 string s2 = str.substr(i, x-i);  // i = index_start, x-i = length
 ```
-Stack:
+### Stack:
 ```c++
 stack <int> s; // LIFO = last in  first out
    s.push(10); // s = [10]
@@ -28,7 +28,7 @@ stack <int> s; // LIFO = last in  first out
    }
    cout << s.empty() << en;
 ```
-Set & MultiSet:
+### Set & MultiSet:
 ```c++
 set <int> s; // Red Black Tree
     s.insert(10);
@@ -78,7 +78,7 @@ priority_queue <int> q;
     q.pop();
     cout << q.top() << en;
 ```
-Dequeue: 
+### Dequeue: 
 ```c++
 deque <int> q;
    q.push_front(10);
