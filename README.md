@@ -44,6 +44,7 @@ set <int> s; // Red Black Tree
     auto it3 = next(s.find(10), 1);
     auto it4 = s.find(-1);
     cout << *it4 << en;
+```
 ```c++
 multiset <int> m;
     m.insert(2);
@@ -166,8 +167,11 @@ int binary_search(int arr[], int n, int x){
     return -1;
 }
 ```
-Grap_Theoury
+
+<h1 align="center">Grap Theoury</h1>
+
 DFS:
+
 ```c++
 void dfs(int node){
     vis[node] = 1;
@@ -396,7 +400,8 @@ Random Number:
 srand(clock());
 int a = rand()%10+1;
 ```
-Wrong Submission
+<h1 align="center">Wrong Submission</h1>
+
 ```c++
 cout << fixed << setprecision(10) << sum << endl;srand(clock());
 ```
