@@ -91,7 +91,7 @@ deque <int> q;
        cout << i << endl;
    }
 ```
-Lambda Functions:
+### Lambda Functions:
 ```c++
 auto func = [] (int i, int j){
    return i+j;
@@ -104,7 +104,7 @@ function <int(int)> fib = [&] (int i){
    };
    cout << fib(4);
 ```
- MAP:
+### MAP:
 ```c++
 map <String, int> freq;
 for(int i = 0; i < n; i++){
@@ -130,7 +130,7 @@ if(ind.count(ans)){
 ```c++
 n*(n - 1) = 10 ?  { N = 5, arr[n] = 1 1 1 1 1 -> 1 2 3 4 5}
 ```
-Euclidean Algorithm:
+### Euclidean Algorithm:
 ```c++
 int gcd(int a, int b) {
 if (a == 0) return b;
@@ -138,7 +138,7 @@ return gcd(b % a, a);
 }
 lcm(a, b) = a*b/(__gcd(a, b);
 ```
-Binary Exponentiation:
+### Binary Exponentiation:
 ```c++
 int power(int a, int b){
     int res = 1;
@@ -154,7 +154,7 @@ int power(int a, int b){
     return res;
 }
 ```
-Binary Search : O(log n)
+### Binary Search : O(log n)
 ```c++
 int binary_search(int arr[], int n, int x){
     int left = 0, right = n - 1, mid;
@@ -170,7 +170,7 @@ int binary_search(int arr[], int n, int x){
 
 <h1 align="center">Grap Theoury</h1>
 
-DFS:
+### DFS:
 
 ```c++
 void dfs(int node){
@@ -231,7 +231,7 @@ void solve(int tt){
    }
 }
 ```
-BFS:
+### BFS:
 ```c++
 void solve(int tt){
    int n, m;
@@ -262,7 +262,7 @@ void solve(int tt){
    for(int x : dis) cout << x << " "; cout << en;
 }
 ```
-Dijkstra’s:
+### Dijkstra’s:
 ```c++
 void solve(int tt){
    int n, m;
@@ -296,7 +296,7 @@ void solve(int tt){
    for(auto x : dis) cout << x << " "; cout << en;
 }
 ```
-Dynamic Programing:
+### Dynamic Programing:
 ```c++
 // Fibonacci Series
 int dp[105];
@@ -312,7 +312,7 @@ void solve(int tt){
    cout << f(7) << en;
 }
 ```
-Sieve & Prime Factorization: N(log N):
+### Sieve & Prime Factorization: N(log N):
 ```c++
 const int N = 10000000;
 vector <int> low(N+1), pm;
@@ -335,7 +335,7 @@ vector <int> prime_fact(int x){
         return res;
 }
 ```
-Sieve Of Eratosthenes: N(√N)
+### Sieve Of Eratosthenes: N(√N)
 ```c++
 const int n = 100000
 bool prime[1000000];
@@ -351,7 +351,7 @@ void sieve(int n){
    for(int i = 0; i < p.size(); i++)  cout << p[i] << " ";
 }
 ```
-Big Mod:
+### Big Mod:
 ```c++
 int power(ll a, ll b, ll mod){
        if(b == 0) return 1%mod;
@@ -361,7 +361,7 @@ int power(ll a, ll b, ll mod){
        return result;
    }
 ```
-Bitwise Operation:
+### Bitwise Operation:
 ```c++
     Bitwise XOR:
    	 5 = 0 1 0 1 
@@ -374,7 +374,7 @@ Bitwise Operation:
       x >> = 0 1 1 0 1 0 1 1
     x >> 2 = 0 0 0 1 1 0 1 0
 ```
-Pointer:
+### Pointer:
 ```c++
 void call(int *x){
    *x = 20;
@@ -395,7 +395,7 @@ int a = 10, b = 20;
    *v[0] += 1;
    cout << a << en;
 ```
-Random Number:
+### Random Number:
 ```c++
 srand(clock());
 int a = rand()%10+1;
@@ -419,7 +419,7 @@ while (scanf("%s",ch) != EOF)
  < input.txt > output.txt
 ```
 ```c++
-C & C++
+### C & C++:
 +) Loop:  i) Initialization (i=0);   ii) Terminate if(i<10);  iii) Increment/Decrement (i=i+1;)
 +) Library Function:  pow(), strlen(), strcpy(), strrev(), strupr(), strlwr(), strcmp(), strcat()
 +) int num;  scanf("%4d", & num);	printf("%d\n",num);
